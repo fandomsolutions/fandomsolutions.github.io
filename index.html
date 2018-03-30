@@ -30,7 +30,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="#home" class="w3-bar-item w3-button w3-wide">FANDOM SOLUTIONS</a>
+      <a href="#home" class="w3-bar-item w3-button w3-wide"><!--img src='chain.png' style='height:25px; width:25px; position:relative; bottom:2px;'-->FANDOM SOLUTIONS</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
@@ -113,7 +113,7 @@ body, html {
       <br>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="phone1.png" alt="Buildings" width="700" height="394">
+      <img class="w3-image w3-round-large" src="phone.png" alt="Buildings" width="700" height="394">
     </div>
   </div>
 </div>
@@ -121,7 +121,7 @@ body, html {
 <!-- Team Section -->
 <div class="w3-container" style="padding:128px 16px" id="team">
   <h3 class="w3-center">THE PROCESS</h3>
-  <p class="w3-center w3-large">We don't just sell you an app.  Our team at Fandom Solutions will work with your students and alumni to develop the solution perfect for your campus. </p>
+  <p class="w3-center w3-large">Our team at Fandom Solutions will work with your students and alumni to develop the solution perfect for your campus. </p>
   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
@@ -283,53 +283,65 @@ body, html {
 <!-- Pricing Section -->
 <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
   <h3>PRICING</h3>
-  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+  <p class="w3-large">Choose a pricing option that fits your needs.</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-black w3-xlarge w3-padding-32">FAN BASED</li>
+        <li class="w3-light-grey w3-padding-24">
+            <b>Funded by the fans</b>
+        </li>
+        <li class="w3-padding-16">Collaborative Fan Development Process</li>
         <li class="w3-padding-16">iOS and Android Platforms</li>
         <li class="w3-padding-16">App Website</li>
-        <li class="w3-padding-16">Collaborative Development Process</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 10</h2>
-          <span class="w3-opacity">per year</span>
-        </li>
+        <li class="w3-padding-16">Support Plan</li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+          <button onclick="contact()" class="w3-button w3-black w3-padding-large">Contact</button>
+          <script>
+            function contact() {
+                window.open('mailto:fandom.solutions@gmail.com?subject=Fan Based Plan Inquiry');
+            }
+            </script>
         </li>
       </ul>
     </div>
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-black w3-xlarge w3-padding-32">SCHOOL BASED</li>
+        <li class="w3-light-grey w3-padding-24">
+            <b>Funded by the School</b>
+        </li>
+        <li class="w3-padding-16">Developed According to School's Needs</li>
         <li class="w3-padding-16">iOS and Android Platforms</li>
         <li class="w3-padding-16">App Website</li>
-        <li class="w3-padding-16">Collaborative Development Process</li>
-        <li class="w3-padding-16">Limited Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 10</h2>
-          <span class="w3-opacity">per year</span>
-        </li>
+        <li class="w3-padding-16">Support Plan</li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+          <button onclick="contactSchool()" class="w3-button w3-black w3-padding-large">Contact</button>
+          <script>
+            function contactSchool() {
+                window.open('mailto:fandom.solutions@gmail.com?subject=School Based Plan Inquiry');
+            }
+            </script>
         </li>
       </ul>
     </div>
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-xlarge w3-padding-32" style='background-color:#5DBCD2'>FAN & SCHOOL BASED</li>
+        <li class="w3-light-grey w3-padding-24">
+            <b>Funded by the school, built for the fans</b>
+        </li>
+        <li class="w3-padding-16">Collaborative Fan Development Process</li>
         <li class="w3-padding-16">iOS and Android Platforms</li>
         <li class="w3-padding-16">App Website</li>
-        <li class="w3-padding-16">Collaborative Development Process</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 50</h2>
-          <span class="w3-opacity">per year</span>
-        </li>
+        <li class="w3-padding-16">Support Plan</li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+          <button onclick="contactBoth()" class="w3-button w3-padding-large" style='background-color:#5DBCD2'>Contact</button>
+          <script>
+            function contactBoth() {
+                window.open('mailto:fandom.solutions@gmail.com?subject=Fan and School Based Plan Inquiry');
+            }
+            </script>
         </li>
       </ul>
     </div>
